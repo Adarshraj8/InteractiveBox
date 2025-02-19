@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    padding: 20px;
+    top: 82px;
+    bottom: 102px;
+}
+
+.box {
+    background: #fff;
+    color: #333;
+   
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.box-content {
+    text-align: left;
+}
+
+.option {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 0.9 px;
+    position: relative;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option .price {
+    font-weight: bold;
+}
+
+.option .standard-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.option .discount {
+    background: #ff6f61;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.option[data-unit="2"] {
+    border: 2px solid #ff6f61;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #ff473a;
+}
+
+.with-lines {
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.with-lines::before, .with-lines::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 25%; /* Adjust the width of the lines as needed */
+    height: 1px; /* Thickness of the line */
+    background: #c0bbbb; /* Color of the line */
+}
+
+.with-lines::before {
+    left: 0;
+}
+
+.with-lines::after {
+    right: 0;
+}

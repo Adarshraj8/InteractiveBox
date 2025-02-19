@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Box -->
+        <div class="box" id="boxTop">
+            <h2 class="with-lines">YAY! It's BOGO</h2>
+            <div class="box-content">
+                <div class="option" data-unit="1">
+                    <input type="radio" name="unitTop" id="unitTop1" value="1" checked>
+                    <label for="unitTop1">1 Unit</label>
+                    <p class="price">$10.00 USD</p>
+                    <p class="standard-price">$24.00 USD</p>
+                    <span class="discount">Standard Price</span>
+                    <div class="details" style="display:none;">
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" data-unit="2">
+                    <input type="radio" name="unitTop" id="unitTop2" value="2">
+                    <label for="unitTop2">2 Units</label>
+                    <p class="price">$18.00 USD</p>
+                    <p class="standard-price">$24.00 USD</p>
+                    <span class="discount">20% Off</span>
+                    <div class="details" style="display:none;">
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" data-unit="3">
+                    <input type="radio" name="unitTop" id="unitTop3" value="3">
+                    <label for="unitTop3">3 Units</label>
+                    <p class="price">$24.00 USD</p>
+                    <p class="standard-price">$24.00 USD</p>
+                    <span class="discount">30% Off</span>
+                    <div class="details" style="display:none;">
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                            <select>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <span>Free Delivery</span>
+                <span>Total: <span id="total-price-top">$18.00 USD</span></span>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
